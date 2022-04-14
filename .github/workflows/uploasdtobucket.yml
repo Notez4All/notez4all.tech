@@ -30,6 +30,6 @@ jobs:
       uses: web3-storage/add-to-web3@v2.0.0
       with:
         # Directory path to add to IPFS
-        path_to_add: ${{ github.workspace}}/'files'
+        path_to_add: ${{ github.workspace}}/files
         # API token for web3.storage
         web3_token: ${{ secrets.web3Token }}
