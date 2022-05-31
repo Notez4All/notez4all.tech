@@ -2,5 +2,4 @@
 title: Welcome to Notez 4 All!
 ---
 
-<title> {{page.title}}
-# Hello!
+<title> {{page.title}} </title>
