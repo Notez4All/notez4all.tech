@@ -6,7 +6,8 @@ title: View an Upload!
 var url = new URL(window.location.href);
 var dId = url.searchParams.get("documentId");
 console.log(dId);
-var file = ipfs.get(dId);
-document.getElementById('Doc').innerHtml("text");
+for await (const buf of Ipfs.get(cid)) {
+  document.getElementById("text").innerText(buf);
+}
 </script>
 <p id="text"></p>
