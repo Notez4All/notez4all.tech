@@ -2,8 +2,7 @@
 title: View an Upload!
 ---
 <script>
-var url_string = "{{ site.url }}{{ page.url}}"; //window.location.href
-var url = new URL(url_string);
-var c = url.searchParams.get("documentId");
-console.log(c);
+var url = new URL(window.location.href);
+var dId = url.searchParams.get("documentId");
+console.log(dId);
 </script>
