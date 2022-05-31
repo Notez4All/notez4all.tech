@@ -1,2 +1,4 @@
 theme: jekyll-theme-midnight
 site-title: "Notez 4 All"
+plugins: 
+ - jekyll-admin
